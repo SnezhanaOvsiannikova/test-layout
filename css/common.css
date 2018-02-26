@@ -116,10 +116,7 @@ nav .navigation li {
 nav .navigation a {
 	color: #616161;
 }
-nav .navigation a.active,
-nav .navigation a:hover,
-nav .navigation a:focus,
-nav .navigation a:active {
+nav .navigation a.active {
 	color: #ff6e40;
 }
 .banner {
@@ -161,10 +158,6 @@ nav .navigation a:active {
 	position: absolute;
 	width: 40px;
 }
-.btn-arrow:active,
-.btn-arrow:hover {
-	background-color: #ff6e40;
-}
 .banner .btn-arrow {
 	background: transparent;
 	color: #fff;
@@ -176,11 +169,6 @@ nav .navigation a:active {
 	-ms-transform: translate(0, -50%);
 	-khtml-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-}
-.banner .btn-arrow:active,
-.banner .btn-arrow:hover {
-	background-color: #ff6e40;
-	color: #fff;
 }
 .banner .left {
 	left: 10px;
@@ -203,24 +191,12 @@ nav .navigation a:active {
 	line-height: 22px;
 	padding: 12px 38px;
 }
-.btn-colored:hover,
-.btn-colored:active,
-.btn-colored:focus {
-	background-color: #ff6e40;
-	color: #fff;
-}
 .btn {
 	border-color: #212121;
 	color: #212121;
 	font-size: 14px;
 	line-height: 16px;
 	padding: 16px 48px 14px;
-}
-.btn:hover,
-.btn:active,
-.btn:focus {
-	background-color: #212121;
-	color: #fff;
 }
 #slider {
 	height: 100%;
@@ -250,10 +226,6 @@ nav .navigation a:active {
 	bottom: 20px;
 	color: #ff6e40;
 	right: 30px;
-}
-.map-wrapper .btn-arrow:hover,
-.map-wrapper .btn-arrow:active {
-	color: #fff;
 }
 #map {
 	height: 400px;
@@ -572,10 +544,5 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 .footer .horizontal-list a {
 	color: #757575;
-}
-.footer .horizontal-list a:active,
-.footer .horizontal-list a:focus,
-.footer .horizontal-list a:hover {
-	color: #000;
 }
 /*FOOTER END*/

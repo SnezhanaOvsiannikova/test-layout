@@ -10,7 +10,7 @@ img {
 }
 a:focus,
 button:focus {
-	outline: none;
+	outline: none !important;
 }
 ul {
 	position: relative;

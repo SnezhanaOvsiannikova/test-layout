@@ -65,29 +65,33 @@
 //add active class on scroll//
 (function(){
 	var windowElem = $(window);
-	var sectionElem = $('section[data-section]');
-	var sectionsArr = [];
+	var collectSectionsData = function() {
+		var sectionElem = $('section[data-section]');
+		var sectionsArr = [];
 
-	sectionElem.each(function (index, elem) {
-		var jElem = $(elem);
-		var objElem = {
-			id: jElem.attr('id'),
-			height: jElem.outerHeight(),
-			top: jElem.offset().top
-		}
-		sectionsArr.push(objElem);
-	})
+		sectionElem.each(function (index, elem) {
+			var jElem = $(elem);
+			var objElem = {
+				id: jElem.attr('id'),
+				height: jElem.outerHeight(),
+				top: jElem.offset().top
+			}
+			sectionsArr.push(objElem);
+		});
+
+		return sectionsArr;
+	};
 
 	windowElem.on('scroll', function(){
 		var activatePosition = $(window).scrollTop() + $(window).height() / 2.5;
+		var sectionsArr = collectSectionsData();
 
 		sectionsArr.forEach(function(currentObj){
-			var elems = $('nav .navigation a');
 			if(
 				activatePosition >= currentObj.top && 
 				activatePosition <= (currentObj.top + currentObj.height)
 			) {
-				elems.removeClass('active');
+				$('nav .navigation a').removeClass('active');
 				$('[href="#'+ currentObj.id +'"]').addClass('active');
 			}
 		});

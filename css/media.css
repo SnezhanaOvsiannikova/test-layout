@@ -128,10 +128,43 @@
 	}
 }
 @media(min-width: 1200px) {
+	nav .navigation a:hover {
+		color: #ff6e40;
+	}
 	.main .our-services .item .content-block {
 		width: 74%;
 	}
 	.main .contact .contact-list a {
 		width: auto;
+	}
+	.btn-arrow:active,
+	.btn-arrow:hover {
+		background-color: #ff6e40;
+	}
+	.banner .btn-arrow:active,
+	.banner .btn-arrow:hover {
+		background-color: #ff6e40;
+		color: #fff;
+	}
+	.btn-colored:hover,
+	.btn-colored:active,
+	.btn-colored:focus {
+		background-color: #ff6e40;
+		color: #fff;
+	}
+	.btn:hover,
+	.btn:active,
+	.btn:focus {
+		background-color: #212121;
+		color: #fff;
+	}
+	.map-wrapper .btn-arrow:hover,
+	.map-wrapper .btn-arrow:active {
+		color: #fff;
+	}
+	.footer .horizontal-list a:active,
+	.footer .horizontal-list a:focus,
+	.footer .horizontal-list a:hover {
+		color: #000;
 	}
 }
