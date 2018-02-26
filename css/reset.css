@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+	display: inline-block;
+}
+a:focus,
+button:focus {
+	outline: none;
+}
+ul {
+	position: relative;
+}
+li {
+	list-style: none;
+}

@@ -1,0 +1,137 @@
+@media(min-width: 480px) {
+	.banner .info-block {
+		width: auto;
+	}
+	.banner .left {
+		left: 30px;
+	}
+	.banner .right {
+		right: 30px;
+	}
+	.banner .info-block h2 {
+		font-size: 32px;
+		line-height: 36px;
+	}
+	.banner .info-block p {
+		font-size: 18px;
+	}
+	.main .our-works article {
+		margin: 0 auto 20px; 
+		width: 50%;
+	}
+}
+@media(min-width: 767px) {
+	h2 {
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 26px;
+	}
+	nav {
+		margin-top: 12px;
+		text-align: right;
+	}
+	nav .navigation {
+		height: auto;
+		overflow: initial;
+	}
+	nav .navigation li {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-right: 12px;
+	}
+	nav .navigation li:last-child {
+		margin: 0;
+	}
+	nav .menu {
+		display: none;
+	}
+	.banner .info-block h2 {
+		font-size: 42px;
+		line-height: 46px;
+	}
+	.banner .info-block p {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.main section {
+		padding: 98px 0;
+	}
+	.main .our-services .item .content-block {
+		float: right;
+		width: 72%;
+	}
+	.main .title h3 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.main .title .btn-colored {
+		width: 100%;
+	}
+	.main .our-works article {
+		width: 100%;
+	}
+	.social-list {
+		margin: 0;
+	}
+	.main .our-works article:after {
+		display: none;
+	}
+	.main .our-works article:hover:after {
+		display: block;
+	}
+	.main .our-works article .bg-ico {
+		opacity: 0;
+		top: 28%;
+	}
+	.main .our-works article:hover .bg-ico {
+		opacity: 1;
+	}
+	.main article .scroll-box {
+		-moz-transition: all .7s;
+		-webkit-transition: all .7s;
+		-o-transition: all .7s;
+		-ms-transition: all .7s;
+		-khtml-transition: all .7s;
+		transition: all .7s;
+		-moz-transform: translate(0, +100%);
+		-webkit-transform: translate(0, +100%);
+		-o-transform: translate(0, +100%);
+		-ms-transform: translate(0, +100%);
+		-khtml-transform: translate(0, +100%);
+		transform: translate(0, +100%);
+	}
+	.main article:hover .scroll-box {
+		-moz-transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-khtml-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	.main .contact {
+		text-align: left;
+	}
+	.main .contact .contact-list a {
+		width: 60%;
+	}
+	.footer {
+		text-align: left;
+	}
+	.footer .horizontal-list {
+		text-align: right;
+	}
+}
+
+@media(min-width: 992px) {
+	.main .our-services .item .content-block {
+		width: 66%;
+	}
+}
+@media(min-width: 1200px) {
+	.main .our-services .item .content-block {
+		width: 74%;
+	}
+	.main .contact .contact-list a {
+		width: auto;
+	}
+}
