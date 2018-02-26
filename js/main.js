@@ -60,7 +60,6 @@
 			elem.addClass('active');
 		}
 	}
-
 }());
 
 //add active class on scroll//
@@ -80,7 +79,7 @@
 	})
 
 	windowElem.on('scroll', function(){
-		var activatePosition = windowElem.scrollTop() + windowElem.height() / 2.5;
+		var activatePosition = $(window).scrollTop() + $(window).height() / 2.5;
 
 		sectionsArr.forEach(function(currentObj){
 			var elems = $('nav .navigation a');

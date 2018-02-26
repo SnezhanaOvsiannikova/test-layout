@@ -303,11 +303,17 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	overflow: visible;
 }
 .header.fixed {
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	left: 0;
 	top: 0;
-	padding: 5px 10px;
+	padding: 5px 0;
 	position: fixed;
-	right: 0;
+	width: 100%;
 	z-index: 2;
 	-moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.25);
 	-webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,0.25);
@@ -376,7 +382,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	transform: rotate(-45deg);
 }
 .main .our-services .item .content-block {
-	width: 100%;
+	float: left;
+	width: 64%;
 }
 .main .our-services .item .content-block h3{
 	color: #212121;
@@ -431,6 +438,11 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 .main article .scroll-box {
 	background-color: #f4f4f4;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 28px 0 24px;
 	text-align: center;
